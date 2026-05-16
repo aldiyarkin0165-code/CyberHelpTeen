@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CyberHelp Teen</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+  <h1>
+    <i class="fa-solid fa-shield-halved"></i>
+    CyberHelp Teen
+  </h1>
+
+  <nav>
+    <a href="#about">О проблеме</a>
+    <a href="#test">Тест</a>
+    <a href="#help">Помощь</a>
+    <a href="#parents">Родителям</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-text" data-aos="fade-right">
+
+    <h2>
+      Профилактика кибербуллинга среди подростков
+    </h2>
+
+    <p>
+      Кибербуллинг — это травля в интернете.
+      Сайт поможет школьникам распознать проблему,
+      узнать способы защиты и получить помощь.
+    </p>
+
+    <a href="#test">
+      <button>
+        Пройти тест
+      </button>
+    </a>
+
+  </div>
+
+  <img
+  src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+  class="hero-image"
+  data-aos="fade-left">
+
+</section>
+
+<section id="about" class="section">
+
+  <h2 data-aos="fade-up">
+    Что такое кибербуллинг?
+  </h2>
+
+  <div class="cards">
+
+    <div class="card" data-aos="zoom-in">
+
+      <i class="fa-solid fa-comments"></i>
+
+      <h3>Оскорбления</h3>
+
+      <p>
+        Унижение, насмешки и травля в чатах,
+        соцсетях и играх.
+      </p>
+
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+
+      <i class="fa-solid fa-triangle-exclamation"></i>
+
+      <h3>Угрозы</h3>
+
+      <p>
+        Запугивание и давление через интернет.
+      </p>
+
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+
+      <i class="fa-solid fa-camera"></i>
+
+      <h3>Фото без разрешения</h3>
+
+      <p>
+        Распространение личной информации и фото.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="test" class="test-section">
+
+  <h2 data-aos="fade-up">
+    Тест: Стал ли я жертвой кибербуллинга?
+  </h2>
+
+  <div class="question">
+
+    <p>Тебя оскорбляли в интернете?</p>
+
+    <select class="answer">
+      <option value="0">Нет</option>
+      <option value="1">Иногда</option>
+      <option value="2">Да</option>
+    </select>
+
+  </div>
+
+  <div class="question">
+
+    <p>Тебе писали угрозы?</p>
+
+    <select class="answer">
+      <option value="0">Нет</option>
+      <option value="1">Иногда</option>
+      <option value="2">Да</option>
+    </select>
+
+  </div>
+
+  <div class="question">
+
+    <p>Твои фото распространяли без разрешения?</p>
+
+    <select class="answer">
+      <option value="0">Нет</option>
+      <option value="1">Иногда</option>
+      <option value="2">Да</option>
+    </select>
+
+  </div>
+
+  <div class="question">
+
+    <p>Тебя исключали из онлайн-групп специально?</p>
+
+    <select class="answer">
+      <option value="0">Нет</option>
+      <option value="1">Иногда</option>
+      <option value="2">Да</option>
+    </select>
+
+  </div>
+
+  <button onclick="checkResult()">
+    Показать результат
+  </button>
+
+  <h3 id="result"></h3>
+
+</section>
+
+<section id="help" class="section">
+
+  <h2 data-aos="fade-up">
+    Что делать?
+  </h2>
+
+  <div class="cards">
+
+    <div class="card" data-aos="fade-up">
+      <i class="fa-solid fa-ban"></i>
+      <h3>Не отвечай агрессией</h3>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <i class="fa-solid fa-camera"></i>
+      <h3>Сделай скриншоты</h3>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <i class="fa-solid fa-user-lock"></i>
+      <h3>Заблокируй обидчика</h3>
+    </div>
+
+    <div class="card" data-aos="fade-up">
+      <i class="fa-solid fa-heart"></i>
+      <h3>Обратись за помощью</h3>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="parents" class="section">
+
+  <h2 data-aos="fade-up">
+    Для родителей и учителей
+  </h2>
+
+  <div class="cards">
+
+    <div class="card" data-aos="flip-left">
+
+      <i class="fa-solid fa-eye"></i>
+
+      <h3>Замечайте изменения</h3>
+
+      <p>
+        Ребёнок может стать тревожным и замкнутым.
+      </p>
+
+    </div>
+
+    <div class="card" data-aos="flip-left">
+
+      <i class="fa-solid fa-comments"></i>
+
+      <h3>Поддерживайте</h3>
+
+      <p>
+        Важно спокойно выслушать и не обвинять.
+      </p>
+
+    </div>
+
+    <div class="card" data-aos="flip-left">
+
+      <i class="fa-solid fa-image"></i>
+
+      <h3>Сохраняйте доказательства</h3>
+
+      <p>
+        Скриншоты помогут при обращении.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <p>
+    CyberHelp Teen © 2026
+  </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+AOS.init();
+</script>
+
+</body>
+</html>
